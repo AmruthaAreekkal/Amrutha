@@ -1,0 +1,222 @@
+#include <stdio.h>
+#define temperature 50.67
+int num;
+int main()
+{
+    num=25;
+    char ch;
+    const int b=10;
+    printf("enter the  character");
+    scanf("%c",&ch);
+    
+    
+    printf("the values are integre number is %d\ncharacter is %c\nconstant value is %d\ntempereture=%f",num,ch,b,temperature);
+
+    return 0;
+}
+
+wap to input data from user using scanf() and display various format specifiers using printf
+
+#include <stdio.h>
+int main()
+{
+    int num;
+    char ch;
+    float temp;
+    printf("enter the  character\n");
+    scanf("%c",&ch);
+    printf("enter the  number\n");
+    scanf("%d",&num);
+    printf("enter the temperature\n");
+    scanf("%f",&temp);
+    printf("the format specifier for integer is %%d\nformat specifier for character is %%c\nformat specifier for float is %%f");
+
+    return 0;
+}
+
+wap that prints the storage space taken by a float type and its range values
+#include <stdio.h>
+int main()
+{
+    float floattype; 
+    printf("storage space for float=%zu",sizeof(floattype));
+
+    return 0;
+}
+wap that uses atleast 5 keywords in c and print some output using the same
+#include <stdio.h>
+int main()
+{
+     int student_id;
+    char nam='A';
+    float temp=32;
+    
+    printf("enter the student id");
+    scanf("%d",&student_id);
+    printf("enterd character is %c\ntemperature=%f\nstudent id=%d",nam,temp,student_id);
+
+    return 0;
+}
+wap to input 10 characters and find its ASCII value
+#include <stdio.h>
+int main()
+{
+    char a1;
+    char a2;
+    char a3;
+    char a4;
+    char a5;
+    char a6;
+    char a7;
+    char a8;
+    char a9;
+    char a10;
+
+    printf("enter the characters\n");
+    scanf("%c",&a1); 
+    printf("enter the characters\n");
+    scanf("%c",&a2);
+     printf("enter the characters\n");
+    scanf("%c",&a3);
+     printf("enter the characters\n");
+    scanf("%c",&a4);
+    printf("enter the characters\n");
+    scanf("%c",&a5);
+     printf("enter the characters\n");
+    scanf("%c",&a6);
+    printf("enter the characters\n");
+scanf("%c",&a7);
+ printf("enter the characters\n");
+    scanf("%c",&a8);
+ printf("enter the characters\n");
+    scanf("%c",&a9);
+     printf("enter the characters\n");
+    scanf("%c",&a10);
+     printf("AScii value of the characters %c=%d\n",a1,a1);
+    printf("AScii value of the characters %c=%d\n",a2,a2);
+    printf("AScii value of the characters %c=%d\n",a3,a3);
+    printf("AScii value of the characters %c=%d\n",a4,a4);
+    printf("AScii value of the characters %c=%d\n",a5,a5);
+    printf("AScii value of the characters %c=%d\n",a6,a6);
+    printf("AScii value of the characters %c=%d\n",a7,a7);
+    printf("AScii value of the characters %c=%d\n",a8,a8);
+    printf("AScii value of the characters %c=%d\n",a9,a9);
+    printf("AScii value of the characters %c=%d\n",a10,a10);
+    
+    return 0;
+}
+Write a program to input a value in decimal, octal and hexadecimal values in a character value using scanf() 
+
+
+
+#include <stdio.h>
+int main()
+{
+ unsigned char val1;
+ unsigned char val2;
+ unsigned char val3;
+ printf("enter the decimal number");
+ scanf("%f",&val1);
+ printf("enter the octal number");
+ scanf("%o",&val2);
+ printf("enter the hexadecimal number");
+ scanf("%x",&val3);
+ printf("decimal value:%f\noctal:%o\nhexadecimal value :%x",val1,val2,val3);
+    return 0;
+}
+
+wap to input a hexadecimal value using scanf in c
+#include <stdio.h>
+int main()
+{
+ unsigned int num;
+ printf("enter the hexadecimal number");
+ scanf("%x",&num);
+ printf("hexadecimal value :%x",num);
+    return 0;
+}
+
+
+wap to iput 5 intger values
+#include <stdio.h>
+int main()
+{
+ int num1,num2,num3,num4,num5;
+ char ch1;
+ char ch2;
+ char ch3;
+ float val1,val2,val3,val4;
+ printf("enter the integer numbers");
+ scanf("%d%d%d%d%d",&num1,&num2,&num3,&num4,&num5);
+ printf("enter the characters");
+ scanf("%s",&ch1);
+ printf("enter the characters");
+ scanf("%s",&ch2);
+ printf("enter the characters");
+ scanf("%s",&ch3);
+ printf("enter the float valus");
+ scanf("%f%f%f%f",&val1,&val2,&val3,&val4);
+ printf("integer values are, %d\n%d\n%d\n%d\n%d\n",num1,num2,num3,num4,num5);
+ printf("charcaters are:%c\n%c\n%c\n",ch1,ch1,ch3);
+ printf("float values are:%f\n%f\n%f\n%f\n",val1,val2,val3,val4);
+int sum1=num1+num2+num3+num4+num5;
+float sum2=val1+val2+val3+val4;
+int float_sum3=val1+val2+val3+val4;
+float dividvalue=sum1/sum2;
+printf("float sum of float values=%f\nint sum of float values=%d\n",sum2,float_sum3);
+printf("sum of integers=%d\n",sum1);
+printf("divided vlaue=%f",dividvalue);
+
+    return 0;
+}
+
+Write a program to get the size of various data types using different constant defined in limits.h header file. 
+
+#include <stdio.h>
+
+int main() {
+
+    // Calculate the size of short int data type
+    printf("The size of short int: %ld bytes\n", sizeof(short int));
+
+    // Calculate the size of unsigned short int data type
+    printf("The size of unsigned short int: %ld bytes\n", sizeof(unsigned short int));
+
+    // Calculate the size of unsigned int data type
+    printf("The size of unsigned int: %ld bytes\n", sizeof(unsigned int));
+
+    // Calculate the size of int data type
+    printf("The size of int: %ld bytes\n", sizeof(int));
+
+    // Calculate the size of long int data type
+    printf("The size of long int: %ld bytes\n", sizeof(long int));
+
+    // Calculate the size of unsigned long int data type
+    printf("The size of unsigned long int: %ld bytes\n", sizeof(unsigned long int));
+
+    // Calculate the size of long long int data type
+    printf("The size of long long int: %ld bytes\n", sizeof(long long int));
+
+    // Calculate the size of unsigned long long int data type
+    printf("The size of unsigned long long int: %ld bytes\n", sizeof(unsigned long long int));
+
+    // Calculate the size of signed char data type
+    printf("The size of signed char: %ld byte\n", sizeof(signed char));
+
+    // Calculate the size of unsigned char data type
+    printf("The size of unsigned char: %ld byte\n", sizeof(unsigned char));
+
+    // Calculate the size of char data type
+    printf("The size of char: %ld byte\n", sizeof(char));
+
+    // Calculate the size of float data type
+    printf("The size of float: %ld bytes\n", sizeof(float));
+
+    // Calculate the size of double data type
+    printf("The size of double: %ld bytes\n", sizeof(double));
+
+    // Calculate the size of long double data type
+    printf("The size of long double: %ld bytes\n", sizeof(long double));
+
+    return 0;
+}
